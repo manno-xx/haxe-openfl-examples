@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="TimeBasedAnimation" package="com.sample.timebasedanimation" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="TimeBasedAnimation" />
+
+	<!-- openfl projects created from the commandline do not have the following line by default -->
+	<window width="480" height="320" fps="60" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" />
+	
+</project>

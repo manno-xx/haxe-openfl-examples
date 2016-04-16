@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="CelularAutomata" package="nl.manno.tests.celularautomata" version="1.0.0" company="manno bult" />
+	<app main="Main" path="Export" file="CelularAutomata" />
+	
+	<window width="640" height="480" />
+
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" exclude="openfl.svg" />
+	<icon path="Assets/openfl.svg" />
+	
+</project>

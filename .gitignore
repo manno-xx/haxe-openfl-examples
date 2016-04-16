@@ -1,7 +1,6 @@
 # Build and Release Folders
-bin/
-bin-debug/
-bin-release/
+**/bin/
+**/Export/
 
 # Other files and folders
 .settings/

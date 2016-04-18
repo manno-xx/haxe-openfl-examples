@@ -1,6 +1,6 @@
 # haxe-openfl-examples
 A collections of very basic examples in Haxe and OpenFL
 
-* CelularAutomataMap: Map generation with Cellular automata
+* CelularAutomataMap: Map generation with Cellular automata (click the stage to step the algorithm)
 * KeyboardEvent_01: A very minimalistic example for registering keypresses
 * TimeBasedAnimation: Simple example of making something move based on time instead of frames

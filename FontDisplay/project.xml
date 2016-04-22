@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="FontDisplay" package="com.sample.fonttest" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="FontDisplay" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" exclude="openfl.svg" />
+	<assets path="Assets/fonts" rename="fonts" exclude="openfl.svg" />
+	<icon path="Assets/openfl.svg" />
+	
+</project>

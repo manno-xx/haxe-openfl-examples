@@ -26,6 +26,7 @@ class Main extends Sprite
 
 	/**
 	 * This is what actually moves the circle that is clicked to the front.
+	 *
 	 * The index of a child element defines its position on the z-axis
 	 * The highest index is the front most, zero is the hind most
 	 * Setting the child index of an element equal to the amount of child elements minus one (remember it starts counting at zero)

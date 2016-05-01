@@ -25,6 +25,10 @@ import openfl.text.TextFormat;
  *     var radius:Float = 10;
  *     var circomference:Float = Math.PI * radius; // Math.PI is a static variable in the Math class (and a constant too; it cannot be changed)
  * 
+ * - Static variables that are also constants are by convention written in uppercase with underscores seperating words.
+ *     Math.PI
+ *     Event.ENTER_FRAME
+ *
  * - To use a static variable you do not use the instance of the class, but address the class directly:
  *     Math.PI is the usage of the static variable PI in the Math class (value ~= 3.14)
  *     Events.ENTER_FRAME is the usage of the static variable ENTER_FRAME in the events class
@@ -87,7 +91,7 @@ class Main extends Sprite
 	 */
 	private function mouseHasMoved( event:MouseEvent )	
 	{
-		RotatingThing.rotationSpeed = RotatingThing.maxRotationSpeed * (event.stageX / stage.stageWidth);
+		RotatingThing.rotationSpeed = RotatingThing.MAX_ROTATION_SPEED * (event.stageX / stage.stageWidth);
 	}
 
 	/**

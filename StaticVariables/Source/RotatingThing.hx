@@ -13,7 +13,7 @@ class RotatingThing extends Sprite
 	public static var rotationSpeed:Float = 0;
 
 	// the static var that defines the max rotation speed in degrees per second
-	public static inline var maxRotationSpeed:Int = 180;
+	public static inline var MAX_ROTATION_SPEED:Int = 180;
 
 	public function new()
 	{

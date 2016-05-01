@@ -10,4 +10,5 @@ A collections of very basic examples in Haxe and OpenFL
 * StaticVariables: A small demo on how to create and use your own static variables (opposed to the unavoidable Event.ENTER_FRAME, Keyboard.UP, etc.).
 * StringInterpolation: An example on how to combine variables into Strings (make sure you see the debug output)
 * TimeBasedAnimation: Simple example of making something move based on time instead of frames
+* UIProgressBar: Example of a bar indicating progress of some sort.
 * URLLoader: How to load data (HTML, JSON, XML) from a remote URL

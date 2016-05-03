@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	
-	<meta title="Actuate" package="com.sample.actuate" version="1.0.0" company="Company Name" />
+	<meta title="Actuate" package="com.sample.actuate" version="1.0.0" company="Manno Bult" />
 	<app main="Main" path="Export" file="Actuate" />
 	
 	<source path="Source" />

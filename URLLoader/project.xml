@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	
-	<meta title="URLLoader" package="com.sample.urlloader" version="1.0.0" company="Company Name" />
+	<meta title="URLLoader" package="com.sample.urlloader" version="1.0.0" company="Manno Bult" />
 	<app main="Main" path="Export" file="URLLoader" />
 	
 	<source path="Source" />

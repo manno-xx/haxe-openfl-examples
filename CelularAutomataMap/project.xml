@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	
-	<meta title="CelularAutomata" package="nl.manno.tests.celularautomata" version="1.0.0" company="manno bult" />
+	<meta title="CelularAutomata" package="nl.manno.tests.celularautomata" version="1.0.0" company="Manno Bult" />
 	<app main="Main" path="Export" file="CelularAutomata" />
 	
 	<window width="640" height="480" />

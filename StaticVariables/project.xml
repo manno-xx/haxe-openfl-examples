@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	
-	<meta title="StaticVariables" package="nl.hanze.cmi.gdd.StaticVariablesDemo" version="1.0.0" company="Hanze uas" />
+	<meta title="StaticVariables" package="nl.hanze.cmi.gdd.StaticVariablesDemo" version="1.0.0" company="Manno Bult" />
 	
 	<app main="Main" path="Export" file="StaticVariables" />
 	

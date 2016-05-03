@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	
-	<meta title="TimeBasedAnimation" package="com.sample.timebasedanimation" version="1.0.0" company="Company Name" />
+	<meta title="TimeBasedAnimation" package="com.sample.timebasedanimation" version="1.0.0" company="Manno Bult" />
 	<app main="Main" path="Export" file="TimeBasedAnimation" />
 
 	<!-- openfl projects created from the commandline do not have the following line by default -->

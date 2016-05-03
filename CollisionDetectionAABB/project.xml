@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="CollisionDetectionAABB" package="com.sample.collisiondetectionAABB" version="1.0.0" company="Manno Bult" />
+	<app main="Main" path="Export" file="CollisionDetectionAABB" />
+	
+	<window width="800" height="480" background="#EEEEEE" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" />
+	
+</project>

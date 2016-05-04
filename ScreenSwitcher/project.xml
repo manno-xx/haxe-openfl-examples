@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="ScreenSwitcher" package="com.sample.screenswitcher" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="ScreenSwitcher" />
+	
+	<window fps="60" />
+
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" />
+	<assets path="Assets/fonts" rename="fonts" />
+	<assets path="Assets/images" rename="images" />
+	
+</project>

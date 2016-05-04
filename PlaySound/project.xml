@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="PlaySound" package="com.sample.playsound" version="1.0.0" company="Manno Bult" />
+	<app main="Main" path="Export" file="PlaySound" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" />
+
+	<assets path="Assets/images" rename="images" />
+	<assets path="Assets/fonts" rename="fonts" />
+	
+	<!-- conditional assets import based on publishing target -->
+	<assets path="Assets/sound" rename="sounds" include="*.mp3" if="flash" />
+	<assets path="Assets/sound" rename="sounds" include="*.ogg" if="neko" />
+	
+</project>

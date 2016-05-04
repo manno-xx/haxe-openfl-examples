@@ -7,6 +7,7 @@ A collections of very basic examples in Haxe and OpenFL
 * FontDisplay: Demo of how to show 'special' fonts in Flash and Neko
 * KeyboardEvent_01: A very minimalistic example for registering keypresses (run it and press a key to see it work)
 * MoveToFront: How to move one element in front of all others. For example when you click on it.
+* PlaySound: Simple demo of how to play a sound file with pause functionality
 * SingletonDemo: Demonstrates the use of the Singleton design pattern.
 * StaticVariables: A small demo on how to create and use your own static variables (opposed to the unavoidable Event.ENTER_FRAME, Keyboard.UP, etc.).
 * StringInterpolation: An example on how to combine variables into Strings (make sure you see the debug output)

@@ -32,7 +32,7 @@ class MenuScreen extends Screen
 
 	private function onPlayClick()
 	{
-		Main.instance.loadScreen( ScreenTypes.GAME_SCREEN );
+		Main.instance.loadScreen( ScreenType.Game );
 	}
 
 }

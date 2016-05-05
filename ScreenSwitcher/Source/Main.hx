@@ -22,10 +22,10 @@ class Main extends Sprite
 
 		instance = this;
 		
-		loadScreen( ScreenTypes.MENU_SCREEN );
+		loadScreen( ScreenType.Menu );
 	}
 
-	public function loadScreen( which:ScreenTypes )
+	public function loadScreen( which:ScreenType )
 	{
 		if( currentScreen != null && contains( currentScreen ) )
 		{
@@ -35,9 +35,9 @@ class Main extends Sprite
 
 		switch ( which ) 
 		{
-			case ScreenTypes.MENU_SCREEN:
+			case ScreenType.Menu:
 				currentScreen = new MenuScreen();
-			case ScreenTypes.GAME_SCREEN:
+			case ScreenType.Game:
 				currentScreen = new GameScreen();
 		}
 

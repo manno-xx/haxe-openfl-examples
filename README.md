@@ -1,6 +1,8 @@
 # haxe-openfl-examples
 A collections of very basic examples in Haxe and OpenFL
 
+See the Wiki for a loose categorization as well as the occasional explanation with the examples.
+
 * Actuate: Demonstrates the Actuate tweening engine. Tweening engines are mainly used for animation (movement, rotation etc.) but can do more. This demonstrates just the basics.
 * CelularAutomataMap: Map generation with Cellular automata (click the stage to step the algorithm)
 * CollisionDetectionAABB: Demo of the basic collision detection using OpenFL's hitTestObject() and a variation that allows for more control. (AABB = Axis Aligned Bounding Box)

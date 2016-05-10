@@ -27,18 +27,18 @@ class Main extends Sprite
 
 		// display score stored in the Singleton class
 		// notice there is no instance created with new ...
-		trace( SingletonDemo.getInstance().getScore() );
+		trace( SingletonDemo.instance.getScore() );
 		
 		// set the score
-		SingletonDemo.getInstance().setScore( 10 );
+		SingletonDemo.instance.setScore( 10 );
 		
 		// display again
-		trace( SingletonDemo.getInstance().getScore() );
+		trace( SingletonDemo.instance.getScore() );
 		
 		// subtract two points
-		SingletonDemo.getInstance().addToScore( -2 );
+		SingletonDemo.instance.addToScore( -2 );
 		
 		// display again
-		trace( SingletonDemo.getInstance().getScore() );
+		trace( SingletonDemo.instance.getScore() );
 	}
 }

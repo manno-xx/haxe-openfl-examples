@@ -9,7 +9,7 @@ class SingletonDemo
 {
 	// this static variable will store a reference to an instance of this class.
 	// because it is a static variable it's value is the same across all possible instances of the class
-	private static var instance:SingletonDemo;
+	public static var instance(get, null):SingletonDemo;
 
 	// this variable is not Singleton specific. It gives this singleton puropose: This singleton is a score tracker
 	private var score:Int = 0;
@@ -55,7 +55,7 @@ class SingletonDemo
 	 *
 	 * In any case, the variable's value is returned; An instance of this class
 	 */
-	public static function getInstance():SingletonDemo
+	static function get_instance():SingletonDemo
 	{
 		if( instance == null )
 			instance = new SingletonDemo();

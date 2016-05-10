@@ -62,7 +62,7 @@ class GameScreen extends Screen
 
 	private function onQuitClick()
 	{
-		Main.instance.loadScreen( ScreenType.Menu );
+		Main.getInstance().loadScreen( ScreenType.Menu );
 	}
 
 	override public function onDestroy()

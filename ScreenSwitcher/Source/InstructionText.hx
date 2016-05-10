@@ -5,6 +5,10 @@ import openfl.text.TextFormat;
 import openfl.text.TextFieldAutoSize;
 import openfl.text.TextFormatAlign;
 
+/**
+ * Text displaying class
+ *
+ */
 class InstructionText extends TextField
 {
 	public function new( msg:String )

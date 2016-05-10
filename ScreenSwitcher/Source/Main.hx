@@ -1,30 +1,41 @@
 package;
 
-
 import openfl.display.Sprite;
 
 import screens.*;
 
-
-
+/**
+ * Demonstrates a way to devide up an application into seperate screens represented by their own class.
+ *
+ * This Main class is a Singleton
+ */
 class Main extends Sprite 
 {
 
 	// which screen is visible/active now
 	private var currentScreen:Screen;
 
-	// see for the stuff between brackets: http://haxe.org/manual/class-field-property.html
+	// the static variable pointing to the instance of this class
+	// see http://haxe.org/manual/class-field-property.html for the access modifiers
 	public static var instance(default, null):Main;
 
-	public function new () 
+	/** 
+	 * This constructor does not do much...
+	 */
+	private function new () 
 	{
 		super ();
-
-		instance = this;
-		
-		loadScreen( ScreenType.Menu );
 	}
 
+	/**
+	 * Load a screen.
+	 * If there is a screen active:
+	 * - it is removed first from the display list
+	 * - it's onDestroy function is called to do possible house keeping tasks
+	 *
+	 * Then a check is done for which screen to load, 
+	 *  it is instantitated, added to the display list and it's onLoad function is called.
+	 */
 	public function loadScreen( which:ScreenType )
 	{
 		if( currentScreen != null && contains( currentScreen ) )
@@ -43,5 +54,29 @@ class Main extends Sprite
 
 		addChild( currentScreen );
 		currentScreen.onLoad();
+	}
+
+	/**
+	 * The public access to the private instance variable
+	 *
+	 */
+	public static function getInstance():Main
+	{
+		if( instance == null )
+			instance = new Main();
+
+		return instance;
+	}
+
+	/**
+	 * The static function main is first called by the OpenFL framework
+	 * This allows for the actual constructor to be private, living up to the Singleton pattern
+	 */
+	public static function main()
+	{
+		var m:Main = Main.getInstance();
+		openfl.Lib.current.stage.addChild( m );
+
+		m.loadScreen( ScreenType.Menu );
 	}
 }

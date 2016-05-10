@@ -4,6 +4,11 @@ import openfl.Assets;
 
 import openfl.display.Sprite;
 
+/**
+ * Simple screen in the application.
+ * Shows a text and a button.
+ *
+ */
 class MenuScreen extends Screen
 {
 	public function new()
@@ -32,7 +37,7 @@ class MenuScreen extends Screen
 
 	private function onPlayClick()
 	{
-		Main.instance.loadScreen( ScreenType.Game );
+		Main.getInstance().loadScreen( ScreenType.Game );
 	}
 
 }

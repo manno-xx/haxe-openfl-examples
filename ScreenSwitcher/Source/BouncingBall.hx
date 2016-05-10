@@ -8,7 +8,7 @@ import openfl.geom.Point;
 
 /**
  * A simple bouncing ball
- *
+ * 
  */
 class BouncingBall extends Sprite
 {

@@ -17,7 +17,7 @@ class Main extends Sprite
 
 	// the static variable pointing to the instance of this class
 	// see http://haxe.org/manual/class-field-property.html for the access modifiers
-	public static var instance(default, null):Main;
+	public static var instance(get, null):Main;
 
 	/** 
 	 * This constructor does not do much...
@@ -60,7 +60,7 @@ class Main extends Sprite
 	 * The public access to the private instance variable
 	 *
 	 */
-	public static function getInstance():Main
+	public static function get_instance():Main
 	{
 		if( instance == null )
 			instance = new Main();
@@ -74,7 +74,7 @@ class Main extends Sprite
 	 */
 	public static function main()
 	{
-		var m:Main = Main.getInstance();
+		var m:Main = Main.instance;
 		openfl.Lib.current.stage.addChild( m );
 
 		m.loadScreen( ScreenType.Menu );

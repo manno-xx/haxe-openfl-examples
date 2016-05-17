@@ -1,7 +1,7 @@
 # haxe-openfl-examples
 A collections of very basic examples in Haxe and OpenFL
 
-See the Wiki for a loose categorization as well as the occasional explanation with the examples.
+See the [Wiki](https://github.com/manno-xx/haxe-openfl-examples/wiki) for a loose categorization as well as the occasional explanation with the examples.
 
 * Actuate: Demonstrates the Actuate tweening engine. Tweening engines are mainly used for animation (movement, rotation etc.) but can do more. This demonstrates just the basics.
 * CelularAutomataMap: Map generation with Cellular automata (click the stage to step the algorithm)
@@ -12,6 +12,7 @@ See the Wiki for a loose categorization as well as the occasional explanation wi
 * PlaySound: Simple demo of how to play a sound file with pause functionality
 * ScreenSwitcher: A demo to display screens defined in seperate classes. Uses enums and a kinda singleton pattern.
 * SingletonDemo: Demonstrates the use of the Singleton design pattern.
+* StateMachine: Demonstrates the State pattern.
 * StaticVariables: A small demo on how to create and use your own static variables (opposed to the unavoidable Event.ENTER_FRAME, Keyboard.UP, etc.).
 * StringInterpolation: An example on how to combine variables into Strings (make sure you see the debug output)
 * TimeBasedAnimation: Simple example of making something move based on time instead of frames

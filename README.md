@@ -2,6 +2,7 @@
 A collections of very basic examples in Haxe and OpenFL
 
 See the [Wiki](https://github.com/manno-xx/haxe-openfl-examples/wiki) for a loose categorization as well as the occasional explanation with the examples.
+(all diagrams in the wiki are done with [Lucidchart](https://www.lucidchart.com/))
 
 * Actuate: Demonstrates the Actuate tweening engine. Tweening engines are mainly used for animation (movement, rotation etc.) but can do more. This demonstrates just the basics.
 * CelularAutomataMap: Map generation with Cellular automata (click the stage to step the algorithm)

@@ -38,7 +38,7 @@ class Main extends Sprite
 		 *  This is done around $playername in this SQL query.
 		 * 
 		 */
-		var sql:String = 'INSERT INTO scores ( name, score ) VALUES ( \'$playerName\', $score );'; 
+		var sql:String = 'INSERT INTO scores ( name, score ) VALUES ( "$playerName", $score );'; 
 		trace( sql );
 	}
 }

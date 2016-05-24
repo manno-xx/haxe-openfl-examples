@@ -13,6 +13,7 @@ See the [Wiki](https://github.com/manno-xx/haxe-openfl-examples/wiki) for a loos
 * PlaySound: Simple demo of how to play a sound file with pause functionality
 * ScreenSwitcher: A demo to display screens defined in seperate classes. Uses enums and a kinda singleton pattern.
 * SingletonDemo: Demonstrates the use of the Singleton design pattern.
+* SpriteAnimation: Use of the Tilesheet example to play sprite sheet animations independent from application framerate.
 * StateMachine: Demonstrates the State pattern.
 * StaticVariables: A small demo on how to create and use your own static variables (opposed to the unavoidable Event.ENTER_FRAME, Keyboard.UP, etc.).
 * StringInterpolation: An example on how to combine variables into Strings (make sure you see the debug output)

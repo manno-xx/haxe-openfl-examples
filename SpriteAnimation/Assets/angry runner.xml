@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:5349373b32a9bdbcd54fcb255b10d5bf:4213140e8cb7395cd7e895f2eeb139a8:f81a0f7ca9be5a46670abb89b146c09c$ -->
+<TextureAtlas imagePath="angry runner.png" width="512" height="32">
+    <SubTexture name="duck_0" x="0" y="0" width="32" height="32"/>
+    <SubTexture name="idle_0" x="33" y="0" width="32" height="32"/>
+    <SubTexture name="idle_1" x="66" y="0" width="32" height="32"/>
+    <SubTexture name="idle_2" x="99" y="0" width="32" height="32"/>
+    <SubTexture name="idle_3" x="132" y="0" width="32" height="32"/>
+    <SubTexture name="jump_0" x="165" y="0" width="32" height="32"/>
+    <SubTexture name="jump_1" x="198" y="0" width="32" height="32"/>
+    <SubTexture name="jump_2" x="231" y="0" width="32" height="32"/>
+    <SubTexture name="jump_3" x="264" y="0" width="32" height="32"/>
+    <SubTexture name="run_0" x="297" y="0" width="32" height="32"/>
+    <SubTexture name="run_1" x="330" y="0" width="32" height="32"/>
+    <SubTexture name="run_2" x="363" y="0" width="32" height="32"/>
+    <SubTexture name="run_3" x="396" y="0" width="32" height="32"/>
+    <SubTexture name="run_4" x="429" y="0" width="32" height="32"/>
+    <SubTexture name="run_5" x="462" y="0" width="32" height="32"/>
+</TextureAtlas>

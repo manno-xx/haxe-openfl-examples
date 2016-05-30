@@ -5,6 +5,7 @@ See the [Wiki](https://github.com/manno-xx/haxe-openfl-examples/wiki) for a loos
 (all diagrams in the wiki are done with [Lucidchart](https://www.lucidchart.com/))
 
 * Actuate: Demonstrates the Actuate tweening engine. Tweening engines are mainly used for animation (movement, rotation etc.) but can do more. This demonstrates just the basics.
+* ArrayExampleOne: Using an array as a source of information. The application flicks through the items in the array until it is empty.
 * CelularAutomataMap: Map generation with Cellular automata (click the stage to step the algorithm)
 * CollisionDetectionAABB: Demo of the basic collision detection using OpenFL's hitTestObject() and a variation that allows for more control. (AABB = Axis Aligned Bounding Box)
 * EditableTextOpenFL: Demo of how to make an editable text field.

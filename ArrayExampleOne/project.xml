@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="ArrayExampleOne" package="com.sample.ArrayExampleOne" version="1.0.0" company="Manno Bult" />
+	<app main="Main" path="Export" file="ArrayExampleOne" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" />
+	<assets path="Assets/img" rename="img" />
+	
+</project>

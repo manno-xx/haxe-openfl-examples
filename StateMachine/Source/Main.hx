@@ -13,6 +13,7 @@ import openfl.display.Sprite;
  * The examples in the article gradualy grow more complex.
  *
  * This example is, in order to explain the principle,  a very basic one: A lamp that has the states on and off.
+ * 
  */
 class Main extends Sprite 
 {

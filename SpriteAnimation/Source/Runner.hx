@@ -1,11 +1,14 @@
 package;
 
 import openfl.Assets;
+import openfl.Lib;
 
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
 import openfl.display.Sprite;
-import openfl.display.Tilesheet;
+import openfl.display.Tile;
+import openfl.display.Tileset;
+import openfl.display.Tilemap;
 
 import flash.geom.Rectangle;
 
@@ -18,7 +21,9 @@ import flash.geom.Rectangle;
 class Runner extends Sprite
 {
 	// the TileSheet instance containing the sprite sheet
-	var tileSheet:Tilesheet;
+	var tileSet:Tileset;
+
+	var tilemap:Tilemap;
 
 	// the variable determining the frame rate of the animations
 	static inline var fps:Int = 6;
@@ -46,11 +51,18 @@ class Runner extends Sprite
 	{
 		super();
 
+		var bitmapData:BitmapData = Assets.getBitmapData( "assets/angry runner.png" );
+		tileSet = new Tileset( bitmapData );
+
+		tilemap = new Tilemap( 32, 32, tileSet );
+
 		initializeSpriteSheet();
 
-		currentStateFrames = runSequence;
+		tilemap.addTile( new Tile( 1 ) );
 
-		tileSheet.drawTiles( this.graphics, [0, 0, currentFrame] );
+		addChild( tilemap );
+
+		currentStateFrames = idleSequence;
 	}
 
 	/**
@@ -60,15 +72,12 @@ class Runner extends Sprite
 	 */
 	private function initializeSpriteSheet()
 	{
-		var bitmapData:BitmapData = Assets.getBitmapData( "assets/angry runner.png" );
-		tileSheet = new Tilesheet( bitmapData );
-
-		// sprite sheet is single row. Easy loop...
-		// accidentally it's a PoT sheet (512x32 px here)
+		// this sprite sheet is a single row. Easy loop...
+		// accidentally it's a PoT (power of two) size (512x32 px here)
 		// individual frames are 32x32 px
 		for (i in 0 ... frameCount) 
 		{
-			tileSheet.addTileRect( new Rectangle ( i * (32+1), 0, 32, 32 ) );
+			tileSet.addRect( new Rectangle ( i * (32+1), 0, 32, 32 ) );
 		}
 	}
 
@@ -88,11 +97,12 @@ class Runner extends Sprite
 		{
 			currentDuration -= msPerFrame;
 			currentFrame++;
+
 			if( currentFrame >= currentStateFrames.length )
 				currentFrame = 0;
 			
-			this.graphics.clear();
-			tileSheet.drawTiles( this.graphics, [0, 0, currentStateFrames[currentFrame] ] );
+			tilemap.removeTile( tilemap.getTileAt( 0 ) );
+			tilemap.addTile( new Tile( currentStateFrames[currentFrame] ) );
 		}
 	}
 }

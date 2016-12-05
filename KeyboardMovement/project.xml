@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="KeyboardMovement" package="com.sample.keyboardmovement" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="KeyboardMovement" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" />
+	
+</project>

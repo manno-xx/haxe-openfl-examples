@@ -12,6 +12,7 @@ See the [Wiki](https://github.com/manno-xx/haxe-openfl-examples/wiki) for a loos
 * FontDisplay: Demo of how to show 'special' fonts in Flash and Neko.
 * KeyboardEvent_01: A very minimalistic example for registering keypresses (run it and press a key to see it work).
 * KeyboardMovement: The very basics of making something move based on keyboard events.
+* KeyboardMovement_02: Movement based on keyboard events and a velocity vector.
 * MoveToFront: How to move one element in front of all others. For example when you click on it.
 * PlaySound: Simple demo of how to play a sound file with pause functionality.
 * ScreenSwitcher: A demo to display screens defined in seperate classes. Uses enums and a kinda singleton pattern.

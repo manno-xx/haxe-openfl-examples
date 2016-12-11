@@ -10,6 +10,7 @@ See the [Wiki](https://github.com/manno-xx/haxe-openfl-examples/wiki) for a loos
 * CollisionDetectionAABB: Demo of the basic collision detection using OpenFL's hitTestObject() and a variation that allows for more control. (AABB = Axis Aligned Bounding Box).
 * EditableTextOpenFL: Demo of how to make an editable text field.
 * FontDisplay: Demo of how to show 'special' fonts in Flash and Neko.
+* Grids: Examples of how to build a basic grid of items (lovely magenta rects in this case).
 * KeyboardEvent_01: A very minimalistic example for registering keypresses (run it and press a key to see it work).
 * KeyboardMovement: The very basics of making something move based on keyboard events.
 * KeyboardMovement_02: Movement based on keyboard events and a velocity vector.

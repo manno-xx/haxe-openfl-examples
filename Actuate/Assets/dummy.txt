@@ -1,0 +1,14 @@
+Even though this folder is not used in this specific project, it needs to have content in order to be uploaded to the github repository. This file serves only to satisfy that criterium.
+
+The fact that empty folders did not get uploaded might have resulted in that the project did not compile on your computer. Haxe/OpenFL will in that case complain about the Assets path not being found.
+
+Another solution to the problem would be to comment the line referring to the assets folder in the project.xml as long as there are no assets in there.
+
+That would mean that the collowing line:
+
+	<assets path="Assets" rename="assets" />
+
+should read:
+
+
+	<!--assets path="Assets" rename="assets" /-->

@@ -8,6 +8,7 @@ See the [Wiki](https://github.com/manno-xx/haxe-openfl-examples/wiki) for a loos
 * ArrayExampleOne: Using an array as a source of information. The application flicks through the items in the array until it is empty.
 * CelularAutomataMap: Map generation with Cellular automata (click the stage to step the algorithm).
 * CollisionDetectionAABB: Demo of the basic collision detection using OpenFL's hitTestObject() and a variation that allows for more control. (AABB = Axis Aligned Bounding Box).
+* CollisionDetectionDistance: Demo of the basic collision detection using basic mathematics: A squared + B squared = C squared.
 * EditableTextOpenFL: Demo of how to make an editable text field.
 * FontDisplay: Demo of how to show 'special' fonts in Flash and Neko.
 * Grids: Examples of how to build a basic grid of items (lovely magenta rects in this case).

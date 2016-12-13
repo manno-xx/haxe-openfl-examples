@@ -14,6 +14,7 @@ See the [Wiki](https://github.com/manno-xx/haxe-openfl-examples/wiki) for a loos
 * KeyboardEvent_01: A very minimalistic example for registering keypresses (run it and press a key to see it work).
 * KeyboardMovement: The very basics of making something move based on keyboard events.
 * KeyboardMovement_02: Movement based on keyboard events and a velocity vector.
+* KeyboardMovement_03: Demo of better Keyboard controlled avatars with only _one_ class to do the registration of which keys are pressed. Each avatar has its own key set it responds to
 * MoveToFront: How to move one element in front of all others. For example when you click on it.
 * PlaySound: Simple demo of how to play a sound file with pause functionality.
 * ScreenSwitcher: A demo to display screens defined in seperate classes. Uses enums and a kinda singleton pattern.

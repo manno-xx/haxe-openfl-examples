@@ -81,6 +81,20 @@ class Runner extends Sprite
 		}
 	}
 
+	public function toggleAnimation()
+	{
+		if( currentStateFrames == idleSequence )
+		{
+			currentStateFrames = runSequence;
+		}
+		else
+		{
+			currentStateFrames = idleSequence;
+		}
+		currentFrame = 0;
+		currentDuration = 0;
+	}
+
 	/**
 	 * update this sprite
 	 * - Calculate the time the current frame was visible

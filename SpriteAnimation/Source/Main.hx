@@ -2,6 +2,7 @@ package;
 
 import openfl.display.Sprite;
 
+import openfl.events.MouseEvent;
 import openfl.events.Event;
 
 import openfl.Lib;
@@ -29,11 +30,17 @@ class Main extends Sprite
 		runner = new Runner();
 		runner.x = stage.stageWidth / 2;
 		runner.y = stage.stageHeight / 2;
+		runner.addEventListener( MouseEvent.CLICK, changeAnimation );
 		addChild( runner );
 		
 		addEventListener( Event.ENTER_FRAME, update );
 		
 		lastUpdate = Lib.getTimer();
+	}
+
+	function changeAnimation(e:MouseEvent)
+	{
+		runner.toggleAnimation();
 	}
 
 	/**

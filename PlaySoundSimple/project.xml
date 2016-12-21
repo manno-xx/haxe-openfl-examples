@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="PlaySoundSimple" package="com.sample.playsoundsimple" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="PlaySoundSimple" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets/img" rename="img" />
+	<assets path="Assets/fonts" rename="fonts" />
+	
+	<assets path="Assets/sound" rename="sound" include="*.ogg" unless="flash" />
+	<assets path="Assets/sound" rename="sound" include="*.mp3" if="flash" />
+	
+</project>

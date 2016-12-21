@@ -51,17 +51,17 @@ class Button extends Sprite
 		image = new Bitmap( upBitmapData );
 		addChild( image );
 
-		trace( label );
-
 		if( label.length > 0 )
 		{
-			var tfmt:TextFormat = new TextFormat( "_sans", 22, 0x000000, true, false, false, null, null, TextFormatAlign.CENTER );
+			var tfmt:TextFormat = new TextFormat( Assets.getFont("fonts/Retro Computer_DEMO.ttf").fontName, 22, 0x000000, true, false, false, null, null, TextFormatAlign.CENTER );
 			var tf:TextField = new TextField();
 			tf.defaultTextFormat = tfmt;
-			// tf.embedFonts = true;
-			tf.autoSize = TextFieldAutoSize.CENTER;
+			tf.embedFonts = true;
+			tf.border = true;
 			tf.mouseEnabled = false;
 			tf.selectable = false;
+			tf.width = image.width;
+			tf.height = image.height;
 			tf.text = label;
 			addChild( tf );
 		}

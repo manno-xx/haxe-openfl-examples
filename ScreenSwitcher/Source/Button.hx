@@ -57,9 +57,11 @@ class Button extends Sprite
 			var tf:TextField = new TextField();
 			tf.defaultTextFormat = tfmt;
 			tf.embedFonts = true;
-			tf.autoSize = TextFieldAutoSize.CENTER;
+			tf.border = true;
 			tf.mouseEnabled = false;
 			tf.selectable = false;
+			tf.width = image.width;
+			tf.height = image.height;
 			tf.text = label;
 			addChild( tf );
 		}

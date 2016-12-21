@@ -15,6 +15,6 @@
 	
 	<!-- conditional assets import based on publishing target -->
 	<assets path="Assets/sound" rename="sounds" include="*.mp3" if="flash" />
-	<assets path="Assets/sound" rename="sounds" include="*.ogg" if="neko" />
+	<assets path="Assets/sound" rename="sounds" include="*.ogg" unless="flash" />
 	
 </project>

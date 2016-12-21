@@ -59,7 +59,8 @@ class Main extends Sprite
 	{
 		if( channel != null )
 		{
-			channel.removeEventListener( Event.SOUND_COMPLETE, onSoundComplete )
+			trace("stopping");
+			channel.removeEventListener( Event.SOUND_COMPLETE, onSoundComplete );
 			channel.stop();
 		}
 
@@ -87,11 +88,13 @@ class Main extends Sprite
 
 		if( isPaused )
 		{
+			trace( "resume playing" );
 			var snd:Sound = getAudio("vinyl-static");
 			channel = snd.play( soundPosition, 1, new SoundTransform( 1, 0 ) );
 		}
 		else
 		{
+			trace( "pause playing" );
 			soundPosition = channel.position;
 			channel.stop();
 		}
@@ -107,6 +110,7 @@ class Main extends Sprite
 	{
 		if( channel != null )
 		{
+			trace( "stop playing" );
 			channel.stop();
 			channel = null;
 		}
@@ -134,6 +138,7 @@ class Main extends Sprite
 		#elseif neko
 		var snd:Sound = Assets.getSound( "sounds/" + basename + ".ogg" );
 		#end
+
 		return snd;
 	}
 }

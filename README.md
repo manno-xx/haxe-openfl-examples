@@ -17,6 +17,7 @@ See the [Wiki](https://github.com/manno-xx/haxe-openfl-examples/wiki) for a loos
 * KeyboardMovement_02: Movement based on keyboard events and a velocity vector.
 * KeyboardMovement_03: Demo of better Keyboard controlled avatars with only _one_ class to do the registration of which keys are pressed. Each avatar has its own key set it responds to
 * MoveToFront: How to move one element in front of all others. For example when you click on it.
+* MoveTowardsBasic: Make one thing move towards another based on their relative positions and the direction from the one to the other.
 * PlaySound: Simple demo of how to play a sound file with pause functionality.
 * PlaySoundSimple: Even more Simple demo of how to play a sound. Also uses SoundTransform.
 * ScreenSwitcher: A demo to display screens defined in seperate classes. Uses enums and a kinda singleton pattern.

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="MoveTowards" package="nl.manno.movetowardsbasic" version="1.0.0" company="Manno Bult" />
+	<app main="Main" path="Export" file="MoveTowardsBasic" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" />
+	
+</project>

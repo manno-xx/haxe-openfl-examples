@@ -151,7 +151,7 @@ class Main extends Sprite
 	{
 		if( e.target == hitTestCircle || e.target == rectIntersectCircle )
 		{
-			var sprite:Sprite = e.target;
+			var sprite:Sprite = cast e.target;
 			sprite.startDrag();
 			stage.addEventListener(MouseEvent.MOUSE_UP, onMouseRelease );
 		}

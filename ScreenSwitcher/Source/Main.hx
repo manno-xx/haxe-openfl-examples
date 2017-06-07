@@ -35,13 +35,15 @@ class Main extends Sprite
 	 *
 	 * Then a check is done for which screen to load, 
 	 *  it is instantitated, added to the display list and it's onLoad function is called.
+	 *
+	 * @param which 	The type of screen to load next
 	 */
 	public function loadScreen( which:ScreenType )
 	{
 		if( currentScreen != null && contains( currentScreen ) )
 		{
-			removeChild( currentScreen );
 			currentScreen.onDestroy();
+			removeChild( currentScreen );
 		}
 
 		switch ( which ) 

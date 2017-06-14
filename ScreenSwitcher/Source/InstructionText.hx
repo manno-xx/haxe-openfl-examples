@@ -18,6 +18,7 @@ class InstructionText extends TextField
 		var textFormat:TextFormat = new TextFormat( "_sans", 24, 0xCCCCCC, true, false, false, null, null, TextFormatAlign.CENTER );
 
 		this.defaultTextFormat = textFormat;
+		this.embedFonts = true;
 		this.text = msg;
 		this.selectable = false;
 		this.mouseEnabled = false;
